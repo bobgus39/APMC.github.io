@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home></Home>}></Route>
+          <Route path="/APMC.github.io" element={<Home></Home>}></Route>
           <Route path="/Features" element={<Features />}></Route>
           <Route path="/Integrations" element={<Integrations />}></Route>
         </Routes>
