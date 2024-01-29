@@ -8,4 +8,4 @@ Main web
 
 # Visita mi pag web official
 
-<link href='https://bobgus39.github.io/APMC.github.io/'>https://bobgus39.github.io/APMC.github.io/</link>
+<link href='https://bobgus39.github.io/APMC.github.io/' target="_blank">https://bobgus39.github.io/APMC.github.io/</link>
