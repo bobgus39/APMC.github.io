@@ -34,6 +34,8 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [theme, setTheme] = useState("purpple-dark");
   let pathName = window.location.pathname;
+  const phoneNumber = 123456789;
+  const message = "Hola! estoy interesado en desarrollar mi sitio web";
 
   const menuItems = [
     "Profile",
@@ -86,6 +88,22 @@ export default function NavBar() {
     setTheme(theme === "purple-dark" ? "light" : "purple-dark");
   };
 
+  const handleWhatsapp = () => {
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappLink, "_blank");
+  };
+
+  const HandlescrollToSection = () => {
+    // Obtén una referencia a la sección o elemento al que deseas desplazarte
+    const section = document.getElementById("contacto");
+
+    // Usa el método scrollIntoView para desplazar la página hasta la sección
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -124,10 +142,12 @@ export default function NavBar() {
               key="whatsapp"
               description="Contáctame con un solo click"
               startContent={icons.whatsapp}
+              onClick={handleWhatsapp}
             >
               Whatsapp
             </DropdownItem>
             <DropdownItem
+              className="hidden"
               key="gmail"
               description="Envíame un mensaje a mi correo electrónico"
               startContent={icons.gmail}
@@ -139,6 +159,7 @@ export default function NavBar() {
               key="General"
               description="Aquí tienes nuestros datos"
               startContent={icons.user}
+              onClick={HandlescrollToSection}
             >
               Información general
             </DropdownItem>
@@ -156,7 +177,7 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden">
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>

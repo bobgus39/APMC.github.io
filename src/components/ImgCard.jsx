@@ -10,6 +10,8 @@ import {
 import foto1 from "../img/foto1.jpg";
 import Fondo from "../img/Fondo.png";
 import Fondo1 from "../img/Fondo1.png";
+import tiendaEj from "../img/tiendaEj.png";
+import webEj from "../img/webEj.png";
 const phoneNumber = 123456789;
 const message = "Hola! estoy interesado en desarrollar mi sitio web";
 
@@ -40,16 +42,16 @@ export default function ImgCard() {
           isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
-          src={foto1}
+          src={Fondo1}
         />
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
-            Plant a tree
+            Sitio web
           </p>
           <h4 className="text-white font-medium text-large">
-            Cuida el planeta
+            Presencia en internet
           </h4>
         </CardHeader>
         <Image
@@ -57,7 +59,7 @@ export default function ImgCard() {
           isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2taLi8IKJlRR_s6NT2K_SpyLAEgCx3LrptA&usqp=CAU"
+          src={webEj}
         />
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
@@ -83,15 +85,15 @@ export default function ImgCard() {
       >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
-            Crea asistentes con IA
+            Marketplace
           </p>
-          <h4 className="text-black font-medium text-2xl">Asistente virtual</h4>
+          <h4 className=" font-medium text-2xl">Tienda online</h4>
         </CardHeader>
         <Image
           removeWrapper
           alt="Card example background"
           className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-          src={Fondo1}
+          src={tiendaEj}
         />
         <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
           <div>
