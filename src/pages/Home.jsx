@@ -4,20 +4,21 @@ import ImgCard from "../components/ImgCard";
 import TechCard from "../components/TechCard";
 import { Spacer, Card, Skeleton } from "@nextui-org/react";
 import { CustomCard } from "../components/CustomCard";
-//import MapComponent from "../components/MapComponent";
+import MapComponent from "../components/MapComponent";
 import Logo from "../img/Logo.png";
 import Footer from "../components/Footer";
-import mapEj from "../img/mapEj.png";
+//import mapEj from "../img/mapEj.png";
 
 export default function Home() {
-  /*const location = {
+  /**/
+  const location = {
     latitude: 38.621159,
     longitude: -0.576774,
   };
   const data = {
     tittle: "Ubicación",
     description: "C/Rafael Alberti, 2, Ibi (Alicante), 03440",
-  };*/
+  };
   return (
     <>
       <Navbar />
@@ -34,24 +35,7 @@ export default function Home() {
           @gmail.com"
         />
         <Spacer x={4} />
-        <CustomCard
-          img={mapEj}
-          tittle="Ubicación"
-          description="C/Rafael Alberti, 2, Ibi (Alicante), 03440"
-        />
-        <Spacer x={4} />
-        <CustomCard
-          img={Logo}
-          tittle="Horario"
-          description="De L a V de 9:00h - 18:00h"
-        />
-        <Spacer x={4} />
-      </div>
-      <Footer />
-    </>
-  );
-}
-/*<Card className="w-[200px] space-y-4 p-4 " radius="lg">
+        <Card className="w-[200px] space-y-4 p-4 " radius="lg">
           {!location ? (
             <Skeleton className="rounded-lg">
               <div className="h-24 rounded-lg bg-default-300"></div>
@@ -82,4 +66,22 @@ export default function Home() {
               </p>
             )}
           </div>
-        </Card>*/
+        </Card>
+
+        <Spacer x={4} />
+        <CustomCard
+          img={Logo}
+          tittle="Horario"
+          description="De L a V de 9:00h - 18:00h"
+        />
+        <Spacer x={4} />
+      </div>
+      <Footer />
+    </>
+  );
+}
+/* <CustomCard
+          img={mapEj}
+          tittle="Ubicación"
+          description="C/Rafael Alberti, 2, Ibi (Alicante), 03440"
+        />*/
