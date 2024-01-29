@@ -10,4 +10,5 @@ export default defineConfig({
   optimizeDeps: {
     include: [],
   },
+  base: "https://bobgus39.github.io/APMC.github.io/",
 });
