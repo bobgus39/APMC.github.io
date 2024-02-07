@@ -12,14 +12,14 @@ export default function App() {
   return (
     <Table isStriped aria-label="Example static collection table">
       <TableHeader>
-        <TableColumn className="tracking-tight  font-semibold  from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
+        <TableColumn className="tracking-tight  font-semibold  from-[#FF1CF7] to-[#b249f8] text-[2rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
           Ventajas
         </TableColumn>
-        <TableColumn className="tracking-tight font-semibold  from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
-          Datos Numéricos
+        <TableColumn className="tracking-tight font-semibold  from-[#FF1CF7] to-[#b249f8] text-[2rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
+          Datos
         </TableColumn>
       </TableHeader>
-      <TableBody className="tracking-tight  font-semibold">
+      <TableBody className="">
         <TableRow key="1">
           <TableCell>Eficiencia</TableCell>
           <TableCell>

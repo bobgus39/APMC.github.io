@@ -5,8 +5,15 @@ import Home from "./pages/Home";
 import Libreria from "./pages/Libreria";
 import Ia from "./pages/Ia";
 import Web from "./pages/Web";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const favicon = document.querySelector('link[rel="icon"]');
+    if (favicon) {
+      favicon.classList.add("rounded-lg");
+    }
+  }, []);
   return (
     <>
       <BrowserRouter>
