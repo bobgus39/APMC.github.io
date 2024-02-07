@@ -171,12 +171,20 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive={pathName === "/APMC.github.io/IA"}>
-          <Link color="foreground" href="/APMC.github.io/IA">
+          <Link
+            color="foreground"
+            href="/APMC.github.io/IA"
+            aria-current="page"
+          >
             IA
           </Link>
         </NavbarItem>
         <NavbarItem isActive={pathName === "/APMC.github.io/Web"}>
-          <Link color="foreground" href="/APMC.github.io/Web">
+          <Link
+            color="foreground"
+            href="/APMC.github.io/Web"
+            aria-current="page"
+          >
             Web
           </Link>
         </NavbarItem>
