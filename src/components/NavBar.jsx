@@ -170,9 +170,22 @@ export default function NavBar() {
             Customers
           </Link>
         </NavbarItem>
-        <NavbarItem className="hidden" isActive={pathName === "/Integrations"}>
-          <Link color="foreground" href="/Integrations">
-            Integrations
+        <NavbarItem isActive={pathName === "/APMC.github.io/IA"}>
+          <Link color="foreground" href="/APMC.github.io/IA">
+            IA
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive={pathName === "/APMC.github.io/Web"}>
+          <Link color="foreground" href="/APMC.github.io/Web">
+            Web
+          </Link>
+        </NavbarItem>
+        <NavbarItem
+          className="hidden"
+          isActive={pathName === "/APMC.github.io/Libreria"}
+        >
+          <Link color="foreground" href="/APMC.github.io/Libreria">
+            Librería
           </Link>
         </NavbarItem>
       </NavbarContent>

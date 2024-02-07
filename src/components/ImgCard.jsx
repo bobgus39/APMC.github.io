@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Card,
   CardHeader,
@@ -12,6 +13,7 @@ import Fondo from "../img/Fondo.png";
 import Fondo1 from "../img/Fondo1.png";
 import tiendaEj from "../img/tiendaEj.png";
 import webEj from "../img/webEj.png";
+import { Link } from "react-router-dom";
 const phoneNumber = 123456789;
 const message = "Hola! estoy interesado en desarrollar mi sitio web";
 
@@ -28,7 +30,11 @@ export default function ImgCard() {
   };
   return (
     <div className="m-10 max-w-[1400px] gap-2 grid grid-cols-12 grid-rows-2 px-8 mx-auto">
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
+      <Card
+        as={Link}
+        to="/APMC.github.io/IA"
+        className="col-span-12 sm:col-span-4 h-[300px]"
+      >
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
             ¿A qué nos dedicamos?
@@ -45,7 +51,11 @@ export default function ImgCard() {
           src={Fondo1}
         />
       </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
+      <Card
+        as={Link}
+        to="/APMC.github.io/Web"
+        className="col-span-12 sm:col-span-4 h-[300px]"
+      >
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
             Sitio web
@@ -73,7 +83,6 @@ export default function ImgCard() {
         </CardHeader>
         <Image
           removeWrapper
-          isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQolpA2IIbqAr8M-cEAULGOxxGPNLjh9tq4Q&usqp=CAU"

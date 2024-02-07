@@ -25,7 +25,6 @@ export default function ImgCard() {
         </CardHeader>
         <Image
           removeWrapper
-          isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
           src={TechFront}
@@ -42,7 +41,6 @@ export default function ImgCard() {
         </CardHeader>
         <Image
           removeWrapper
-          isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
           src={TechBack}
@@ -59,7 +57,6 @@ export default function ImgCard() {
         </CardHeader>
         <Image
           removeWrapper
-          isZoomed
           alt="Card background"
           className="z-0 w-full h-full object-cover"
           src={TechAi}

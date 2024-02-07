@@ -1,3 +1,23 @@
-imagenes contactos con mapa de gooogle maps
+pag secundarias
 
-y hacer enlaces whatsapp, gmail, al scroll de la pag
+img principal con titulo y ventaja
+
+tres datos numéricos o porcentuales de los asistentes virtuales
+
+descripción y ejemplos como en una tabla izquierda y derecha imagen estatica
+
+footer
+
+2-Presencia en internet
+
+-Make beautiful websites regardless of your design experience.
+
+
+-Ejemplo de marketplace
+
+-tabla??
+
+3-React+next UI 
+
+
+-Ejemplos de funcionalidades (como en next ui con codigo y todo)
