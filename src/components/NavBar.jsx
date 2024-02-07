@@ -165,8 +165,8 @@ export default function NavBar() {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <NavbarItem isActive={pathName === "/"}>
-          <Link href="/" aria-current="page">
+        <NavbarItem isActive={pathName === "/APMC.github.io/"}>
+          <Link href="/APMC.github.io/" aria-current="page">
             Customers
           </Link>
         </NavbarItem>
