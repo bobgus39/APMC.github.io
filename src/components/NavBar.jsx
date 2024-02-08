@@ -172,7 +172,10 @@ export default function NavBar() {
             Customers
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathName === "/APMC.github.io/IA"}>
+        <NavbarItem
+          className="hidden"
+          isActive={pathName === "/APMC.github.io/IA"}
+        >
           <Link
             color="foreground"
             href="/APMC.github.io/IA"
@@ -181,7 +184,10 @@ export default function NavBar() {
             IA
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathName === "/APMC.github.io/Web"}>
+        <NavbarItem
+          className="hidden"
+          isActive={pathName === "/APMC.github.io/Web"}
+        >
           <Link
             color="foreground"
             href="/APMC.github.io/Web"
