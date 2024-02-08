@@ -33,7 +33,7 @@ export default function ImgCard() {
       <Card
         as={Link}
         to="/APMC.github.io/IA"
-        className="col-span-12 sm:col-span-4 h-[300px]"
+        className="col-span-12 sm:col-span-7 h-[300px]"
       >
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
@@ -54,7 +54,7 @@ export default function ImgCard() {
       <Card
         as={Link}
         to="/APMC.github.io/Web"
-        className="col-span-12 sm:col-span-4 h-[300px]"
+        className="w-full col-span-12 sm:col-span-5 h-[300px]"
       >
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
@@ -72,7 +72,7 @@ export default function ImgCard() {
           src={webEj}
         />
       </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
+      <Card className=" hidden col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">
             React + Next UI
@@ -114,7 +114,7 @@ export default function ImgCard() {
             color="primary"
             variant="shadow"
             radius="full"
-            size="sm"
+            size="lg"
             onClick={handleWhatsapp}
           >
             Whatsappeame
@@ -153,7 +153,7 @@ export default function ImgCard() {
               </p>
             </div>
           </div>
-          <Button radius="full" size="sm" onClick={openGithub}>
+          <Button radius="full" variant="shadow" size="lg" onClick={openGithub}>
             Github
           </Button>
         </CardFooter>

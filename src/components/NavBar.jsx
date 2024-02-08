@@ -19,7 +19,7 @@ import {
 import { MoonIcon } from "../Icons/MoonIcon.jsx";
 import { SunIcon } from "../Icons/SunIcon.jsx";
 //import { AcmeLogo } from "../AcmeLogo.jsx";
-import Logo from "../img/Logo.png";
+import Logo from "../img/Logo2.png";
 import {
   ChevronDown,
   Lock,
@@ -112,7 +112,9 @@ export default function NavBar() {
           className="hidden"
         />
         <NavbarBrand>
-          <Image width="60px" src={Logo} alt="logo"></Image>
+          <Link href="/APMC.github.io/" aria-current="page">
+            <Image width="60px" src={Logo} alt="logo"></Image>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 

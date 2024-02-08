@@ -2,7 +2,7 @@
 import { Card, Image, CardHeader, Divider } from "@nextui-org/react";
 import NavBar from "../components/NavBar";
 import Fondo from "../img/Fondo.png";
-import Fondo1 from "../img/Fondo1.png";
+import ComicEjIA from "../img/ComicEjIA.png";
 import CardData from "../components/CardData";
 import TableCustom from "../components/TableCustom";
 import Footer from "../components/Footer";
@@ -51,8 +51,8 @@ export default function Ia() {
         <div className="lg:w-3/5 my-auto">
           <TableCustom className="h-full " />
         </div>
-        <div className="lg:w-2/5 my-auto">
-          <Image src={Fondo1} alt="fondo IA" className="h-full" />
+        <div className="sm:block hidden lg:w-2/5 my-auto">
+          <Image src={ComicEjIA} alt="fondo IA" className="h-full" />
         </div>
       </div>
       <Contact />

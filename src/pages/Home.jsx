@@ -21,6 +21,21 @@ export default function Home() {
     <>
       <Navbar />
       <ImgCard />
+      <div className="lg:w-3/5 inline-block my-auto  ">
+        <h1 className="tracking-tight inline font-semibold text-[2.5rem] lg:text-5xl">
+          Estas son las&nbsp;
+        </h1>
+        <h1 className="tracking-tight inline font-semibold from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
+          tecnologías&nbsp;
+        </h1>
+        <h1 className="tracking-tight inline font-semibold text-[2.5rem] lg:text-5xl">
+          que usamos en nuestro día a día
+        </h1>
+        <p className="w-full md:w-1/2 my-2 text-lg lg:text-xl font-normal text-default-500 block max-w-full !w-full text-center md:text-left">
+          Siempre estamos buscando nuevas tecnologías para mejorar nuestras
+          soluciones y ofrecer un mejor servicio.
+        </p>
+      </div>
       <TechCard />
 
       <Contact />
