@@ -47,11 +47,11 @@ export default function Ia() {
         </div>
       </div>
       <Divider className="my-4" />
-      <div className="flex flex-col lg:flex-row gap-1 p-4 h-full">
-        <div className="lg:w-3/5 my-auto">
+      <div className="flex flex-col gap-4 lg:flex-row gap-1 p-4 h-full">
+        <div className="lg:w-2/5 my-auto">
           <TableCustom className="h-full " />
         </div>
-        <div className="sm:block hidden lg:w-2/5 my-auto">
+        <div className="sm:block hidden lg:w-3/5 my-auto">
           <Image src={ComicEjIA} alt="fondo IA" className="h-full" />
         </div>
       </div>
